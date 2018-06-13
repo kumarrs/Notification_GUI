@@ -75,12 +75,12 @@ def win():
     button2.bind("<Button-2>",exit)
     button2.pack()
     
-    if (button2 !='normal'):
-        print('HI')
-        win()
-        
-    root.mainloop()
+    root.after(10000,lambda:root.quit())
     
+
+    
+    root.mainloop()
+
 win()
 
 
